@@ -41,12 +41,14 @@ public class MainMenuManager : MonoBehaviour
     public void LoadLevelByIndex(int levelIndex)
     {
         UpdateStats();
+        Time.timeScale = 1;
         SceneManager.LoadScene(levelIndex);
     }
 
     public void LoadLevelByName(string levelName)
     {
         UpdateStats();
+        Time.timeScale = 1;
         SceneManager.LoadScene(levelName);
     }
 

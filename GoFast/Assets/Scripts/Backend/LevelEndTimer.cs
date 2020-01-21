@@ -84,24 +84,19 @@ public class LevelEndTimer : myReset
     {
         time += Time.deltaTime * Time.timeScale;//timescale for pause
 
-        int min = Mathf.RoundToInt(time) / 60;
-        float seconds = Mathf.Round((time - min * 60) * 100) / 100;
+        int min =(int)time / 60;
+        float seconds = (time - min * 60);
         string secs = "";
 
         //formatting
         text.text = "";
 
         if (seconds < 10) secs = "0";
-        secs += seconds.ToString();
-        if ((seconds * 100) % 10 == 0)
-        {
-            secs += "0";
-            if ((seconds * 10) % 10 == 0) secs += "0";
-        }
+        secs += seconds.ToString("F2");
+        
 
         if (min != 0) text.text = min + ":";
         text.text += secs;
-
 
         //color
         distance = Vector3.Distance(player.transform.position, transform.position);//wie weit ist es noch
@@ -125,12 +120,10 @@ public class LevelEndTimer : myReset
     public IEnumerator restart(bool delay)
     {
         //Time.timeScale = 0.0001f;
+
         timing = false;
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
 
-        //reset everything;
-       // myReset.ResetAll();
-       //not my job
        /*
         while (!Input.anyKeyDown)
         {
@@ -148,7 +141,7 @@ public class LevelEndTimer : myReset
         endTimer();
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
         Time.timeScale = 1.0f;
-        int level = SceneManager.GetActiveScene().buildIndex;
+        //int level = SceneManager.GetActiveScene().buildIndex;
         //Debug.Log("lvl: " + level + ", count: " + SceneManager.sceneCountInBuildSettings);
         // level++;
         // if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
