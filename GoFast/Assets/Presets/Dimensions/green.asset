@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: green
   m_EditorClassIdentifier: 
   mat: {fileID: 2100000, guid: 1301b0eb005e1e4408601c2bf35e8c8f, type: 2}
-  index: 0
+  index: 2
   postProcessingVolume: {fileID: 11400000, guid: e580782c3dd89af4d99e6d8f603148cc,
     type: 2}
   fogColor: {r: 0.27450982, g: 0.5647059, b: 0.29615885, a: 1}
