@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a936688941f878479fe66e6d7aa8a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timepause: 0.01
+  timepause: 0.000001
   canvas: {fileID: 428034392570633}
   slider: {fileID: 428035569817159}
 --- !u!1 &428035569817159

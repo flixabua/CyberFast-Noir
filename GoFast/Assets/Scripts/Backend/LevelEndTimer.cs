@@ -119,7 +119,6 @@ public class LevelEndTimer : myReset
 
     public IEnumerator restart(bool delay)
     {
-        Time.timeScale = 0.0001f;
         timing = false;
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
 
@@ -127,10 +126,7 @@ public class LevelEndTimer : myReset
        // myReset.ResetAll();
        //not my job
 
-        while (!Input.anyKeyDown)
-        {
-            yield return new WaitForEndOfFrame();
-        }
+        
         Time.timeScale = 1.0f;
         startTimer();
         yield return null;
@@ -142,7 +138,7 @@ public class LevelEndTimer : myReset
         endTimer();
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
         Time.timeScale = 1.0f;
-        int level = SceneManager.GetActiveScene().buildIndex;
+        //int level = SceneManager.GetActiveScene().buildIndex;
         //Debug.Log("lvl: " + level + ", count: " + SceneManager.sceneCountInBuildSettings);
         // level++;
         // if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
