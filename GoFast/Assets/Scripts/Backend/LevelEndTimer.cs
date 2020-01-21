@@ -153,7 +153,7 @@ public class LevelEndTimer : myReset
         if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
         Debug.Log(level);
         
-        SceneManager.LoadScene(level);
+        SceneManager.LoadScene(0);
         yield return null;
     }
 
