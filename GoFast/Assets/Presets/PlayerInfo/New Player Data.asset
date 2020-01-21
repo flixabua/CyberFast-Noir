@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15068d6414080da4c907705f06bfbe15, type: 3}
+  m_Name: New Player Data
+  m_EditorClassIdentifier: 
+  maxSpeed: 10
+  maxAccelarationSpeed: 10
+  accelarationForce: 60
+  myDrag: 0.8
+  jumpForce: 400
+  aerialMultiplier: 0.15
+  jumpCooldown: 0.15
+  groundedMargin: 0.15
+  wallRunVertivalDrag: 0.82
+  wallMultiplier: 0.6
+  wallRunCameraTilt: 20
+  wallRunCameraTiltSpeed: 0.15
+  wallRunWallAttraction: 5
+  wallRunDetectionDistance: 1.55
+  wallMinVelocity: 4
+  wallRunJumpNormalForce: 500
+  wallRunJumpTangentForce: 200
+  wallRunJumpForwardForce: 600
+  wallRunJumpVerticalForce: 400
+  wallTurnDetectionDistance: 2
+  wallTurnVerticalForce: 500
+  wallTurnNormalForce: 300
+  wallTurnMinVerticalSpeed: -5
+  turnSpeed: 500
+  pullUpVercticalForce: 500
+  pullUpForwardForce: 50
