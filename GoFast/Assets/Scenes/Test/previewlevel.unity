@@ -6760,10 +6760,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1407041950, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
-      propertyPath: fovPunchCurve.m_Curve.Array.data[2].value
-      value: -0.0036227345
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
 --- !u!4 &1407041947 stripped
@@ -11154,12 +11150,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 428036383028265, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 428036383028265, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
-      propertyPath: m_AnchorMax.y
+    - target: {fileID: 428034392570632, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428034318442987, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
@@ -11174,8 +11166,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 428034392570632, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
-      propertyPath: m_LocalPosition.z
+    - target: {fileID: 428036383028265, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428036383028265, guid: ec86dbca53f118844868841d43c0f44d, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
