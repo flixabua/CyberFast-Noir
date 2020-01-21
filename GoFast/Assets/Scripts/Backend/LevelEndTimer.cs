@@ -124,19 +124,20 @@ public class LevelEndTimer : myReset
 
     public IEnumerator restart(bool delay)
     {
-        Time.timeScale = 0.0001f;
+        //Time.timeScale = 0.0001f;
         timing = false;
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
 
         //reset everything;
        // myReset.ResetAll();
        //not my job
-
+       /*
         while (!Input.anyKeyDown)
         {
             yield return new WaitForEndOfFrame();
         }
         Time.timeScale = 1.0f;
+        */
         startTimer();
         yield return null;
     }
