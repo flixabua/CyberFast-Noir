@@ -15,7 +15,7 @@ public class CameraEffects : MonoBehaviour
     private Camera cam;
     private float standartFov = 60;
 
-    void Start()
+    void Awake()
     {
         cam = GetComponentInChildren<Camera>();
         if (cam == null) Debug.LogError(name + " could not find a camera");
