@@ -148,11 +148,11 @@ public class LevelEndTimer : myReset
         if (delay) yield return new WaitForSecondsRealtime(restartTime);
         Time.timeScale = 1.0f;
         int level = SceneManager.GetActiveScene().buildIndex;
-        Debug.Log("lvl: " + level + ", count: " + SceneManager.sceneCountInBuildSettings);
-        level++;
-        if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
-        Debug.Log(level);
-        
+        //Debug.Log("lvl: " + level + ", count: " + SceneManager.sceneCountInBuildSettings);
+        // level++;
+        // if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
+        //ebug.Log(level);
+
         SceneManager.LoadScene(0);
         yield return null;
     }

@@ -305,7 +305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amResetTrigger: 0
-  playerData: {fileID: 11400000, guid: 4f71fc2bfc14e4149bc247dac2963639, type: 2}
+  mouseSpeed: 1
+  playerData: {fileID: 11400000, guid: 49c29c3fdb2ea594e84982ad3156f80b, type: 2}
   inputData: {fileID: 11400000, guid: 585742902ff0c3d468221b25c54dba4e, type: 2}
 --- !u!95 &16885932
 Animator:
@@ -355,9 +356,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dimensions:
-  - {fileID: 11400000, guid: eb39f7f3cc5ab09468ecd6d627a79ee7, type: 2}
-  - {fileID: 11400000, guid: 6b89aae922a3a3347aaf5c69a712f1b1, type: 2}
   - {fileID: 11400000, guid: 66741bda996e24848a72153d38a52818, type: 2}
+  - {fileID: 11400000, guid: 6b89aae922a3a3347aaf5c69a712f1b1, type: 2}
+  dimensionVolumeIndex: 
   button: Switch
 --- !u!114 &1407041950
 MonoBehaviour:
