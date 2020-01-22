@@ -57,6 +57,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: floorBox
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d2174a625d30fd34d8b7ad12b275d382,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5178661895559278292, guid: d2174a625d30fd34d8b7ad12b275d382,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -5495902117074765545, guid: 01fd93ddcae94dd4b9cd614b80c3cfb0,
+        type: 3}
     - target: {fileID: -4216859302048453862, guid: d2174a625d30fd34d8b7ad12b275d382,
         type: 3}
       propertyPath: m_LocalPosition.x
