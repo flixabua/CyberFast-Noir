@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ArtesController
   m_EditorClassIdentifier: 
   maxSpeed: 100
-  maxAccelarationSpeed: 10
+  maxAccelarationSpeed: 15
   accelarationForce: 60
   myDrag: 0.8
   jumpForce: 400
