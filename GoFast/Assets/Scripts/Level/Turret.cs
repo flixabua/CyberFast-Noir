@@ -48,14 +48,16 @@ public class Turret : MonoBehaviour
     {
         looker = GetComponent<clampLookAt>();
 
-        if (target == null) Debug.LogWarning(name + " was not assigned a target, please do so in inspector");
-        target = GameObject.FindObjectOfType<PlayerControllerRefactored>().gameObject;
         if (target == null)
         {
-            Debug.LogWarning(name + " could not find a target and destoryed itself, please do so in inspector");
-            Destroy(gameObject);
+            Debug.LogWarning(name + " was not assigned a target, please do so in inspector");
+            target = GameObject.FindObjectOfType<PlayerControllerRefactored>().gameObject;
+            if (target == null)
+            {
+                Debug.LogWarning(name + " could not find a target and destoryed itself, please do so in inspector");
+                Destroy(gameObject);
+            }
         }
-
         targetRigid = target.GetComponent<Rigidbody>();
 
         if (projectile == null) Debug.LogError(name + " was not assigned a projectile. please do so in inspector");

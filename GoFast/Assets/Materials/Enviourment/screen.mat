@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0b7079cea06d5654a91a84e81872a9d5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 814e08fe1e20e474d9eccdbebcfb164b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -82,7 +82,7 @@ Material:
     - _Parallax: 0.02
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.38
+    - _Smoothness: 0.46
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -93,7 +93,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 0.23156738, b: 1, a: 1}
-    - _EmissionColor: {r: 1.9766746, g: 1.6351548, b: 1.6351548, a: 1}
+    - _EmissionColor: {r: 1.6126826, g: 0.6036298, b: 0.6036298, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
 --- !u!114 &1774302499855737660
 MonoBehaviour:
