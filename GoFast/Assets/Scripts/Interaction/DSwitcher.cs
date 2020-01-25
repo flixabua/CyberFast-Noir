@@ -27,7 +27,7 @@ public class DSwitcher : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown(button))
+        if (Input.GetButtonDown(button) && Time.timeScale == 1)
         {
             currentDimension++;
             if (currentDimension >= dimensions.Length) currentDimension = 0;
