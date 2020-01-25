@@ -235,5 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amResetTrigger: 0
-  restartTime: 0.2
+  restartTime: 5
   text: {fileID: 6924320894741844639}
+  konfetti: {fileID: 9161168571351468717, guid: 76e901906979ba542aae5f8d719c9d66,
+    type: 3}

@@ -29,6 +29,8 @@ public class LevelEndTimer : myReset
     private float maxDistance = 1000;
     private float distance = 0;
 
+    [SerializeField] GameObject konfetti;
+
     void Update()
     {
         if (timing)
@@ -57,6 +59,8 @@ public class LevelEndTimer : myReset
         maxDistance = Vector3.Distance(player.transform.position, transform.position);
         //TODO: get record!!!
         record = GameStateManager.getHighscore(SceneManager.GetActiveScene().buildIndex);
+
+        if (konfetti == null) Debug.LogError("Konfetti of " + gameObject.name + " was null");
     }
 
     public void startTimer()
@@ -68,11 +72,6 @@ public class LevelEndTimer : myReset
     public void endTimer()
     {
         timing = false;
-        if (time < record || record == 0f)
-        {
-            GameStateManager.updateHighscore(SceneManager.GetActiveScene().buildIndex, time);
-            text.color = Color.white;
-        }
     }
 
     public void safeTime()
@@ -139,14 +138,23 @@ public class LevelEndTimer : myReset
     {
         Time.timeScale = 0.001f;
         endTimer();
-        if (delay) yield return new WaitForSecondsRealtime(restartTime);
-        Time.timeScale = 1.0f;
+       
         //int level = SceneManager.GetActiveScene().buildIndex;
         //Debug.Log("lvl: " + level + ", count: " + SceneManager.sceneCountInBuildSettings);
         // level++;
         // if (level >= SceneManager.sceneCountInBuildSettings) level = 0;
         //ebug.Log(level);
 
+        if (time < record || record == 0f)
+        {
+            GameStateManager.updateHighscore(SceneManager.GetActiveScene().buildIndex, time);
+            Debug.Log("New Record: " + time);
+            Instantiate(konfetti, player.transform.position + player.transform.forward*2 + player.transform.up, Quaternion.identity);
+            text.color = Color.white;
+            if (delay) yield return new WaitForSecondsRealtime(restartTime);
+
+        }
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);
         yield return null;
     }
