@@ -535,8 +535,8 @@ public class PlayerControllerRefactored : myReset
         {
             #if (UNITY_EDITOR)
                         UnityEditor.EditorApplication.isPlaying = false;
-            #elif (UNITY_STANDALONE)
-                                Application.Quit();
+        /*    #elif (UNITY_STANDALONE)
+                                Application.Quit(); */
             #endif
             Debug.Log("Attempted to quit application");
         }
