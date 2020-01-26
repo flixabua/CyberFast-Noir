@@ -149,7 +149,7 @@ public class LevelEndTimer : myReset
         {
             GameStateManager.updateHighscore(SceneManager.GetActiveScene().buildIndex, time);
             Debug.Log("New Record: " + time);
-            Instantiate(konfetti, player.transform.position + player.transform.forward*2 + player.transform.up, Quaternion.identity);
+            Instantiate(konfetti, player.transform.position + player.transform.forward*2 + player.transform.up, player.transform.rotation);
             text.color = Color.white;
             if (delay) yield return new WaitForSecondsRealtime(restartTime);
 
