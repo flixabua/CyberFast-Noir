@@ -2297,10 +2297,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positions:
-  - x: -156.74
+  - x: -156
     y: 755
     z: -978.15
-  - x: -202
+  - x: -207
     y: 755
     z: -978.15
   gizmoColor: {r: 0, g: 0, b: 0, a: 1}
