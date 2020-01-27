@@ -74,4 +74,29 @@ public class MainMenuManager : MonoBehaviour
         UpdateStats();
     }
 
+    public void unlockAll()
+    {
+        GameStateManager.updateHighscore(1, 10f);
+        GameStateManager.updateHighscore(2, 10f);
+        GameStateManager.updateHighscore(3, 10f);
+        playerStats = GameObject.Find("Highscore").GetComponent<Text>();
+        if (GameStateManager.getHighscore(1) == 0f || GameStateManager.getHighscore(1) >= timeToUnlockLevel2)
+        {
+            button2.interactable = false;
+        }
+        else
+        {
+            button2.interactable = true;
+        }
+        if (GameStateManager.getHighscore(2) == 0f || GameStateManager.getHighscore(2) >= timeToUnlockLevel3)
+        {
+            button3.interactable = false;
+        }
+        else
+        {
+            button3.interactable = true;
+        }
+        UpdateStats();
+    }
+
 }
