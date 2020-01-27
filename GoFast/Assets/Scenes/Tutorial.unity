@@ -2230,7 +2230,7 @@ PrefabInstance:
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.33
+      value: -36.3
       objectReference: {fileID: 0}
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
@@ -2294,7 +2294,7 @@ PrefabInstance:
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 64.8
+      value: 66.9
       objectReference: {fileID: 0}
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
@@ -3391,12 +3391,12 @@ PrefabInstance:
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.9
+      value: -37.22
       objectReference: {fileID: 0}
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 386.2
+      value: 385.36
       objectReference: {fileID: 0}
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
@@ -7693,10 +7693,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.0118
       objectReference: {fileID: 0}
-    - target: {fileID: 1407041950, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
-      propertyPath: fovPunchCurve.m_Curve.Array.data[2].value
-      value: -0.0036227345
-      objectReference: {fileID: 0}
     - target: {fileID: 16885938, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
       propertyPath: playerData
       value: 
@@ -7707,11 +7703,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 585742902ff0c3d468221b25c54dba4e,
         type: 2}
-    - target: {fileID: 4476443780702220925, guid: 2a05d36a94b7f3e46834b4acf322d11d,
-        type: 3}
-      propertyPath: m_Drag
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1407041949, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
       propertyPath: dimensions.Array.size
       value: 2
@@ -7721,6 +7712,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 66741bda996e24848a72153d38a52818,
         type: 2}
+    - target: {fileID: 4476443780702220925, guid: 2a05d36a94b7f3e46834b4acf322d11d,
+        type: 3}
+      propertyPath: m_Drag
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407041950, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
+      propertyPath: fovPunchCurve.m_Curve.Array.data[2].value
+      value: -0.0036227345
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a05d36a94b7f3e46834b4acf322d11d, type: 3}
 --- !u!1 &1979654473
@@ -8036,7 +8036,7 @@ PrefabInstance:
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.9
+      value: -35.37
       objectReference: {fileID: 0}
     - target: {fileID: 8699140109066366866, guid: 4923711d29c22214abb24cf1996a6ab9,
         type: 3}
