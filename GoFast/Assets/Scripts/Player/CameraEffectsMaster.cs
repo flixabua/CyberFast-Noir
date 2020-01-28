@@ -25,14 +25,14 @@ public class CameraEffectsMaster : MonoBehaviour
         reload();
     }   
 
-    public static void fovPunch(float strength, float duration)
+    public static void fovPunch(float strength, float duration)//static acces to fov
     {
         //Debug.Log(" fov punch");
         if (instance != null) instance.applyFovPunch(strength, duration);
         else Debug.LogWarning("Attempted fov punch, but there was no instance of the master");
     }
 
-    public static int addEffect(Effect effect)
+    public static int addEffect(Effect effect)//register an effect (dimension)
     {
         if (instance != null)
         {
@@ -86,7 +86,7 @@ public class CameraEffectsMaster : MonoBehaviour
         //ppVolume.profile.settings.Add(colorGrading);
     }
     */
-    public void applyFovPunch(float strength, float duration)
+    public void applyFovPunch(float strength, float duration)//call coroutine for every camera
     {
         for (int i = 0; i < cameraEffects.Length; i++)
         {
@@ -100,7 +100,7 @@ public class CameraEffectsMaster : MonoBehaviour
     }
     */
 
-    public void reload()
+    public void reload()//basically singleton
     {
 
         //not a "real" singleton, because plans change and player doesnt want its master to die

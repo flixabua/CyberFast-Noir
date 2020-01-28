@@ -35,9 +35,9 @@ public class DSwitcher : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Start()//register all dimensions to the camera effects
     {
-        switchables = GameObject.FindObjectsOfType<DSwitchable>().ToList<DSwitchable>();
+        //switchables = GameObject.FindObjectsOfType<DSwitchable>().ToList<DSwitchable>();
 
         if (dimensions.Length == 0) Debug.LogError("There are no dimensions to shift to");
 
@@ -53,7 +53,7 @@ public class DSwitcher : MonoBehaviour
         switchDimension(0);
     }
 
-    public static Dimension register(DSwitchable switchObject)
+    public static Dimension register(DSwitchable switchObject)//register a switchabe to me
     {
         DSwitcher switcher = GameObject.FindObjectOfType<DSwitcher>();//maybe use singelton instead?
 

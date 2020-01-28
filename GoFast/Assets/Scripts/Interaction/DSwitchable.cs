@@ -30,36 +30,36 @@ public class DSwitchable : MonoBehaviour
     
     private void Awake()//Initiallize before intial switch
     {
-        dimension = DSwitcher.register(this);
+        dimension = DSwitcher.register(this);//register to switcher
         if (dimension == null) Debug.LogWarning(name + " failed to register to " + dimensionIndex);
         else Debug.Log(name + " registered to dimension " + dimension.index);
 
 
-        Transform[] childTrans = gameObject.GetComponentsInChildren<Transform>();
+        Transform[] childTrans = gameObject.GetComponentsInChildren<Transform>();//gat all childern
         children = new GameObject[childTrans.Length];
         for (int i = 0; i < children.Length; i++)
         {
             children[i] = childTrans[i].gameObject;
         }
 
-        if (render.Length == 0) render = GetComponentsInChildren<Renderer>();
+        if (render.Length == 0) render = GetComponentsInChildren<Renderer>();//get renderes
         if (render.Length == 0) Debug.LogError("There is no valid renderer for " + name);
 
 
-        myLayer = new int[children.Length];
+        myLayer = new int[children.Length];//get layers of children
         for (int i = 0; i < children.Length; i++)
         {
             myLayer[i] = children[i].layer;
         }
         layer = gameObject.layer;
 
-        castShadow = new UnityEngine.Rendering.ShadowCastingMode[render.Length];
+        castShadow = new UnityEngine.Rendering.ShadowCastingMode[render.Length];//get show of renders
         for (int i = 0; i < render.Length; i++)
         {
             castShadow[i] = render[i].shadowCastingMode;
         }
 
-        for (int i = 0; i < render.Length; i++)
+        for (int i = 0; i < render.Length; i++)//get materials of renders
         {
             myMaterial.Add(render[i].materials);
             Material[] mat = new Material[render[i].materials.Length];
@@ -75,7 +75,7 @@ public class DSwitchable : MonoBehaviour
     {
         if (dimension != null)
         {
-            for (int i = 0; i < render.Length; i++)
+            for (int i = 0; i < render.Length; i++)//set render settings
             {
                 if (dimension.index != dim)
                 {
@@ -90,7 +90,7 @@ public class DSwitchable : MonoBehaviour
                 }
             }
 
-            for (int i = 0; i < children.Length; i++)
+            for (int i = 0; i < children.Length; i++)//set layer of chidren
             {
                 if (dimension.index != dim)
                 {
